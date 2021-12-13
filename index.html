@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" media="screen and (max-width:1170px) " href="phone.css">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+</head>
+
+<body>
+
+  
+
+   
+
+        
+    <nav id="navbar">
+        <div id="logo">
+            <img src="my.png.jpeg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home </a></li>
+            <li class="item"><a href="#clients">Our Clients</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+
+        </ul>
+
+
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">welcome to my website</h1>
+        <p>Lorem voluptate possimus quos suscipas beatae. Voluptates est corrupti illum quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing um?</p>
+        <button type="button" class="btn btn-warning"><b>Order Now</b></button>
+    </section>
+
+
+    <section class="services-container">
+        <h1 class="h-primary">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2021/04/06/14/38/pizza-6156566_960_720.jpg" alt="pizza">
+                <h2 class="h-secondary">Food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laudantium, quas, necessitatibus
+                    blanditiis id optio tenetur eaque, dolore quia atque neque asperiores vel!</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg" alt="pizza">
+                <h2 class="h-secondary">Catering</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laudantium, quas, necessitatibus
+                    blanditiis id optio tenetur eaque, dolore quia atque neque asperiores vel!</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2017/07/25/00/23/spring-rolls-2536526_960_720.jpg" alt="pizza">
+                <h2 class="h-secondary">Bulk Ordering </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laudantium, quas, necessitatibus
+                    blanditiis id optio tenetur eaque, dolore quia atque neque asperiores vel!</p>
+            </div>
+        </div>
+    </section>
+<section id="client-section">
+<h1 class="h-primary center">Our Clients</h1>
+<div id="clients">
+    <div class="client-item">
+        <img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png"  alt="">
+    </div>
+    <div class="client-item">
+        <img src="https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_960_720.png"  alt="">
+    </div>
+    <div class="client-item">
+        <img src="https://cdn.pixabay.com/photo/2015/08/09/10/19/flickr-881367_960_720.png"  alt="">
+    </div>
+    <div class="client-item">
+        <img src="https://cdn.pixabay.com/photo/2013/03/30/00/10/latex-97866_960_720.png"  alt="">
+    </div>
+    <div class="client-item">
+        <img src="https://cdn.pixabay.com/photo/2014/07/15/23/36/github-394322_960_720.png"  alt="">
+    </div>
+</div>
+
+</section>
+<section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label for="name"><b>Name:  </b></label>
+                <input type="text"  class="form-control" name="name" id="name" placeholder="Enter your name">
+                <small id="namevalid" class="form-text text-muted invalid-feedback">
+                   <b class="wrong"> Your username must be 2-10 characters long and should not start with a number</b>
+                  </small>
+            </div>
+            <div class="form-group">
+                <label for="email"><b>Email: </b></label>
+                <input type="email" class="form-control" name="name" id="email" placeholder="Enter your email">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                   
+                   <b class="wrong"> Your email must be a valid email</b>
+                  </small>
+            </div>
+            <div class="form-group">
+                <label for="phone"><b>Phone Number:</b> </label>
+                <input type="phone" class="form-control" name="name" id="phone" placeholder="Enter your phone">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                  <b class="wrong">  Your phone number must be 10 digit long</b>
+                  </small>
+            </div>
+
+            <div class="form-group">
+                <label for="message"><b>Message: </b></label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+       
+    </div>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your travel request has been successfully submitted
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+   <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+            <strong>Error!</strong> Your travel request has not been sent due to errors
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <footer>
+            <div class="center">
+                Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+            </div>
+        
+    
+</section>
+
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+<script src="js/project4.js"></script>
+<script src="auto.js"></script>
+</body>
+
+</html>
