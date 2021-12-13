@@ -1,6 +1,6 @@
 # project-
 this is food ordering front end website project which is fully responsive  which is made just for practice purpose
-in this , a form is there in which user name is from 2 to 13 length
+in this , a form is there in which user name is from 2 to 10 length
 mobile no. of length 10
 email validation is also there
 clients are shown in website
